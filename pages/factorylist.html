@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>企业列表</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <script src="../assets/js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/style/factorylist.css">
+    
+</head>
+<body>
+
+    <div class="factory-title">
+        <span>企业列表</span>
+    </div>
+    <div class="factory-body" id="factory-body">
+        <div class="factory-search">
+            <input type="text" placeholder=" 点击搜索" class="factory-search-input"><a class="factory-search-button">搜索</a>
+        </div>
+
+        <div id="factory-list" class="factory-list" v-for="(item,index) in factorys">
+            <div class="factory-info">
+                    <a href="" class="clearfix">
+                        <div class="ent_img float_left"><img v-bind:src="factorys[index].img" class="main_img"></div>
+                        <div class="ent_info float_right">
+                            <div class="news_right"></div>
+                            <div class="ent_title">{{item.factoryname}}</div>
+                            <div class="ent_tags">{{item.remarks}}</div>
+                            <div class="ent_wage float_left"><span>{{item.salary}}</span>元</div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+
+    </div>
+    <script src="../assets/js/factorylist.js"></script>
+</body>
+
+</html>
