@@ -1,0 +1,91 @@
+body{
+    
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 1em;
+    font-family: "microsoft yahei", 微软雅黑, 宋体, Verdana, Arial, Helvetica, sans-serif;
+    color: rgb(192, 178, 178);
+    text-size-adjust: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+
+
+.factory-title{
+    width: 100%;
+    line-height: 200%;
+    font-size: 22px;
+    color: white;
+    background-color: #3399FF;
+    text-align: center;
+    height: 5%;
+}
+
+.factory-hr{
+    width: 95%;
+    border: 1px solid #A9A9A9;
+    border-top: 0;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.head-name{
+    margin: 18px auto;
+    font-size: 27px;
+    color: #3399FF;
+}
+
+.head-title{
+    font-size: 14px;
+}
+
+.head-info{
+    font-size: 14px;
+    color: #2F4F4F;   
+}
+
+.factory-bottom{
+
+    position: fixed;
+    bottom: 0%;
+    margin-top: 50px;
+    border:1px solid #A9A9A9;
+    width: 100%;
+    font-size: 1em;
+    font-family: "microsoft yahei", 微软雅黑, 宋体, Verdana, Arial, Helvetica, sans-serif;
+    color: rgb(192, 178, 178);
+    text-size-adjust: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.factory-bottom a{
+    border: 0px solid black;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.factory-map{
+    width: 80%;
+    height: 30%;   
+}
+
+.map-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.factory-remarks{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.factory-signup{
+    font-size: 0.8em;
+    text-align: center;
+    background-color: red;
+    color: white;
+}

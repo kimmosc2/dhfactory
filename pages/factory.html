@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
-    <title>Title</title>
+    <title>企业详情</title>
+    <script src="../assets/js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/style/factoryinfo.css">
+    <script src="../assets/js/factory.js"></script>
+    <script>
+        var wid = window.screen.width;
+        if (wid > 500) {
+            window.location.href = "https://www.hndhhr.com/Factory/pages/screenerror.html";
+        }
+    </script>
 </head>
-<body>
 
+<body>
+    <div id="factory-info">
+        <div class="factory-title" id="factory-title">
+            <span>企业信息</span>
+        </div>
+        <div id="factory-head" class="factory-head">
+            <p class="head-name"> {{ factory.name}}</p>
+            <span class="head-title">综合薪资 : &nbsp;</span><span class="head-info" style="color:red;">{{factory.salary}}元</span><br>
+            <span class="head-title">性别要求 : &nbsp;</span><span class="head-info">{{factory.sex}}</span> <br>
+            <span class="head-title">年龄要求 : &nbsp;</span><span class="head-info">{{factory.age}}岁</span><br>
+            <span class="head-title">工作地址 : &nbsp;</span><span class="head-info">{{factory.address}}</span><br>
+            <span class="head-title">面试地址 : &nbsp;</span><span class="head-info">{{factory.faceaddress}}</span><br>
+        </div>
+        <hr class="factory-hr">
+        <div class="factory-body">
+            <div class="factory-infos">
+                <div class="factory-remarks">
+                    <span>{{factory.infos}}</span>
+                </div>
+                <div class="map-box">
+                    <img v-bind:src="factory.img" class="factory-map">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="factory-bottom" id="factory-bottom">
+        <a class="factory-tel">电话咨询</a><a class="factory-signup">我要报名<br>领返费</a>
+    </div>
 </body>
+<script>
+
+    var info = new Vue({
+        el: '#factory-info',
+        data: {
+            factory: {
+                "name": "上海日腾",
+                "salary": "3500-4500",
+                "sex": "不限",
+                "age": "18-45",
+                "address": "上海",
+                "faceaddress": "上海厂区或郑州航空港区",
+                "infos": "测试测试测试测试测试测试测试测试测试测试测试测试" +
+                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
+                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
+                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
+                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
+                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
+                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",
+
+                "img": "../assets/images/factorymap/上海日腾.png"
+            }
+        }
+    })
+</script>
+
 </html>
