@@ -7,12 +7,14 @@
     <script src="../assets/js/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/style/factoryinfo.css">
     <script src="../assets/js/factory.js"></script>
+
     <script>
         var wid = window.screen.width;
         if (wid > 500) {
             window.location.href = "https://www.hndhhr.com/Factory/pages/screenerror.html";
         }
     </script>
+    
 </head>
 
 <body>
@@ -31,6 +33,7 @@
         <hr class="factory-hr">
         <div class="factory-body">
             <div class="factory-infos">
+                <p class="factory-remarks-head">公司简介:</p>
                 <div class="factory-remarks">
                     <span>{{factory.infos}}</span>
                 </div>
@@ -57,14 +60,11 @@
                 "age": "18-45",
                 "address": "上海",
                 "faceaddress": "上海厂区或郑州航空港区",
-                "infos": "测试测试测试测试测试测试测试测试测试测试测试测试" +
-                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
-                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
-                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
-                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
-                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" +
-                    "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",
-
+                "infos": "日腾电脑配件（上海）有限公司是HP、Dell、Asus、等世界知名电脑品牌重要的机构外观件制造厂商，"+
+                "在电子消费品行业的外观件生产领域积累了丰富的经验，凭著优异的质量和高效的生产能力屹立于行业的前端。我们"+
+                "拥有强大的组织团队，已通过以及国际认证标准。日腾电脑配件（上海）有限公司历经一期厂房、二期厂房的建设"+
+                "，后因生产扩充的需求，外平方米厂房，又于2009年10月建成日贵精密模具（上海）有限公司。2010年2日租赁外厂"+
+                "厂房成立日腾二厂。",
                 "img": "../assets/images/factorymap/上海日腾.png"
             }
         }
